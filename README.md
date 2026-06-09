@@ -51,16 +51,5 @@ The dataset is a dummy retail transaction database consisting of:
 | 2 | Office Chair | 2 | 450000 |
 | 3 | Notebook | 3 | 25000 |
 
-## Analysis 1: Monthly Revenue Trend
-
-### Business Question
-How does monthly revenue change over time?
-
-### SQL Query
-SELECT 
-    DATE_FORMAT(o.order_date, '%Y-%m') AS month,
-    SUM(oi.quantity * oi.unit_price) AS total_revenue
-FROM orders o
-JOIN order_items oi ON o.order_id = oi.order_id
-GROUP BY DATE_FORMAT(o.order_date, '%Y-%m')
-ORDER BY month;
+## Full Businness Insight
+![Business Insight](https://github.com/Rhalasya/Retail-Merah-Merona.id/blob/main/bussiness-insight.md)
